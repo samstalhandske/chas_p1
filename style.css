@@ -1,0 +1,53 @@
+* {
+	--bg: #2E4057;
+	--fg: #FFFBFEFF;
+	--link: #7CAE7AFF;
+	--link-hover: #FB4D3DFF;
+	--acc: #FF7F11FF;
+
+	background-color: var(--bg);
+	color: var(--fg);
+
+	font-family: "Lexend", sans-serif;
+}
+
+* > a {
+	color: var(--fg);
+	text-decoration-color: var(--link);
+}
+* > a:hover {
+	text-decoration-color: var(--link-hover);
+}
+
+* > h2, h3 {
+	color: var(--acc);
+	margin-bottom: 8px;
+}
+
+.myName {
+	margin-top: 0px;
+}
+
+.musicReleases {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; /* centrerar elementen horisontellt */
+	gap: 16px;
+	row-gap: 16px;           /* radavstånd mellan rader */
+}
+
+.musicRelease {
+	flex: 0 0 auto;
+}
+
+.musicRelease img {
+	display: block;
+	height: auto;
+	transition: filter 0.1s ease, transform 0.1s ease;
+}
+
+.musicRelease img:hover {
+	filter: brightness(1.1) saturate(1.1);
+	transform: scale(1.025);
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
